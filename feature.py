@@ -17,6 +17,10 @@ class BayleyScores(BaseModel):
     bayley_iii_cognitive_p_value: float
     bayley_iii_language_p_value: float
 
+class SampleScores(BaseModel):
+    geographic_origin: float
+    treatment: float
+    sample_size: float
 class AdditionalScores(BaseModel):
     authorandyear: Optional[Union[float, str]]
     gmfcs: Optional[Union[float, str]]
@@ -33,6 +37,17 @@ def query_bayley_scores(client: OpenAI, text: str, disease: str):
         response_format=BayleyScores
     )
     return completion.choices[0].message
+
+def query_sample_scores(client: OpenAI, text: str, disease: str):
+    completion = client.beta.chat.completions.parse(
+        model="gpt-4o-2024-08-06",
+        messages=[
+            {"role": "system", "content": f"You are an assistant specialized in information for studies on {disease}. Extract information on main Author of the study and the year it was published, GMFCS, WPPSI-III, and WISC-IV."},
+            {"role": "user", "content": f"Extract information on geographic origin of the study samples, the proposed or studies treatment if any, and the study sample size for the  study on {disease}: {text}.  If the rquired values are mentioned but no specific value is given, provide a brief description of what is stated."}
+        ],
+        response_format=SampleScores
+    )
+    return completion.choices[0].message  
 
 def query_primary_outcome(client: OpenAI, text: str, disease: str):
     completion = client.beta.chat.completions.parse(
@@ -54,4 +69,4 @@ def query_additional_scores(client: OpenAI, text: str, disease: str):
         ],
         response_format=AdditionalScores
     )
-    return completion.choices[0].message
+    return completion.choices[0].message    
