@@ -18,9 +18,9 @@ class BayleyScores(BaseModel):
     bayley_iii_language_p_value: float
 
 class SampleScores(BaseModel):
-    geographic_origin: float
-    treatment: float
-    sample_size: float
+    geographic_origin: Optional[Union[float, str]]
+    treatment: Optional[Union[float, str]]
+    sample_size: Optional[Union[float, str]]
 class AdditionalScores(BaseModel):
     authorandyear: Optional[Union[float, str]]
     gmfcs: Optional[Union[float, str]]
