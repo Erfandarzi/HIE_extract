@@ -1,0 +1,728 @@
+ARTICLE
+Predicting Outcomes of Neonates Diagnosed With
+Hypoxemic-Ischemic Encephalopathy
+Namasivayam Ambalavanan, MDa, Waldemar A. Carlo, MDa, Seetha Shankaran, MDb, Carla M. Bann, PhDc
+, Steven L. Emrich, MSc
+,
+Rosemary D. Higgins, MDd, Jon E. Tyson, MD, MPHe, T. Michael O’Shea, MD, MPHf
+, Abbot R. Laptook, MDg, Richard A. Ehrenkranz, MDh,
+Edward F. Donovan, MDi
+, Michele C. Walsh, MD, MSj
+, Ronald N. Goldberg, MDk, Abhik Das, PhDc
+, for the National Institute of Child Health and
+Human Development Neonatal Research Network
+a
+Department of Pediatrics, University of Alabama at Birmingham, Birmingham, Alabama; bDepartment of Pediatrics, Wayne State University, Detroit, Michigan; c
+RTI
+International, Research Triangle Park, North Carolina; dNational Institute of Child Health and Human Development Neonatal Research Network, Bethesda, Maryland; e
+Department of Pediatrics, University of Texas Health Science Center at Houston, Houston, Texas; f
+Department of Pediatrics, Wake Forest University School of Medicine,
+Winston-Salem, North Carolina; gDepartment of Pediatrics, Women and Infants Hospital, Providence, Rhode Island; hDepartment of Pediatrics, Yale University School of
+Medicine, New Haven, Connecticut; i
+Department of Pediatrics, University of Cincinnati, Cincinnati, Ohio; j
+Department of Pediatrics, Case Western Reserve University,
+Cleveland, Ohio; k
+Department of Pediatrics, Duke University, Durham, North Carolina
+The authors have indicated they have no financial relationships relevant to this article to disclose.
+ABSTRACT
+OBJECTIVE. The goals were to identify predictor variables and to develop scoring
+systems and classification trees to predict death/disability or death in infants with
+hypoxic-ischemic encephalopathy.
+METHODS. Secondary analysis of data from the multicenter, randomized, controlled,
+National Institute of Child Health and Human Development Neonatal Research
+Network trial of hypothermia in hypoxic-ischemic encephalopathy was performed. Data for 205 neonates diagnosed as having hypoxic-ischemic encephalopathy were studied. Logistic regression analysis was performed by using clinical
+and laboratory variables available within 6 hours of birth, with death or moderate/
+severe disability at 18 to 22 months or death as the outcomes. By using the
+identified variables and odds ratios, scoring systems to predict death/disability or
+death were developed, weighting each predictor in proportion to its odds ratio. In
+addition, classification and regression tree analysis was performed, with recursive
+partitioning and automatic selection of optimal cutoff points for variables. Correct
+classification rates for the scoring systems, classification and regression tree models, and early neurologic examination were compared.
+RESULTS. Correct classification rates were 78% for death/disability and 71% for death
+with the scoring systems, 80% and 77%, respectively, with the classification and
+regression tree models, and 67% and 73% with severe encephalopathy in early
+neurologic examination. Correct classification rates were similar in the hypothermia and control groups.
+CONCLUSIONS. Among neonates diagnosed as having hypoxic-ischemic encephalopathy, the classification and regression tree model, but not the scoring system, was
+superior to early neurologic examination in predicting death/disability. The 3
+models were comparable in predicting death. Only a few components of the early
+neurologic examination were associated with poor outcomes. These scoring systems and classification trees, if validated, may help in assessments of prognosis and
+may prove useful for risk-stratification of infants with hypoxic-ischemic encephalopathy for clinical trials.
+www.pediatrics.org/cgi/doi/10.1542/
+peds.2006-1591
+doi:10.1542/peds.2006-1591
+Key Words
+logistic models, decision trees, asphyxia
+neonatorum, hypoxia-ischemia, brain,
+predictive value of tests
+Abbreviations
+CART— classification and regression tree
+GMFCS—gross motor function
+classification system
+HIE—hypoxic-ischemic encephalopathy
+ROC—receiver operating characteristic
+NICHD—National Institute of Child Health
+and Human Development
+CI— confidence interval
+Accepted for publication Jul 26, 2006
+Address correspondence to Namasivayam
+Ambalavanan, MD, University of Alabama at
+Birmingham, 525 New Hillman Building, 619
+South 20th St, Birmingham, AL 35249. E-mail:
+ambal@uab.edu
+PEDIATRICS (ISSN Numbers: Print, 0031-4005;
+Online, 1098-4275). Copyright © 2006 by the
+American Academy of Pediatrics
+2084 AMBALAVANAN et al
+Downloaded from http://publications.aap.org/pediatrics/article-pdf/118/5/2084/1117546/zpe01106002084.pdf?casa_token=eiA0BNTkP7AAAAAA:qz_I0VqXpL8c7TaDuuOtq6FkIupy_Q461E7EQZZ9ionTVWzGdQbLKRpSMbyNortheasternUniversityuser
+HYPOXIC-ISCHEMIC ENCEPHALOPATHY (HIE) is a major
+contributor to neonatal death and morbidity. An
+estimated 23% of the 4 million neonatal deaths1 and 8%
+of all deaths at 5 years of age throughout the world
+each year are associated with signs of asphyxia at birth.2
+Even at referral centers in developed countries, death or
+moderate to severe disability occurs for 53% to 61% of
+infants diagnosed as having moderate to severe HIE.3,4
+Statements about prognoses in HIE are usually based on
+neurologic examinations. Sarnat and Sarnat5 described 3
+clinical stages of encephalopathy, and they and others
+have reported that infants with mild (stage 1) encephalopathy rarely have persistent neurologic impairment, as
+seen for a majority of infants with severe (stage 3) encephalopathy. Infants with moderate encephalopathy
+have an intermediate risk of persistent neurologic impairment.5–7 Children with moderate/severe neonatal
+encephalopathy are at risk for reduced school performance, whereas those with mild encephalopathy have
+school performance scores similar to those of their
+peers.6 Despite the fact it has been shown to be highly
+predictive of outcomes,5–7 one limitation of the staging
+described by Sarnat and Sarnat5 is that the stage is usually assigned well after birth; no studies have evaluated
+the predictive value of early neurologic evaluations. It is
+extremely important to validate the use of neurologic
+examinations in the early hours after resuscitation for
+recruitment for therapeutic trials and to examine
+whether additional clinical data can strengthen predictions.
+A recent randomized, controlled trial of hypothermia
+in infants with HIE, conducted by the National Institute
+of Child Health and Human Development (NICHD) Neonatal Research Network, enrolled 208 term infants and
+demonstrated reductions in rates of death and moderate/severe disability, with an absolute risk reduction of
+18% (number needed to treat  6) and a relative risk
+reduction of 29%.3 This trial provided a unique opportunity to develop a scoring system, because this was a
+multicenter trial with a relatively large sample size from
+tertiary care NICUs in recent years. In addition, all of the
+enrolled infants had neurologic evaluations performed
+by certified physician examiners before enrollment, detailed histories, and follow-up evaluations performed by
+certified examiners at 18 to 22 months of age. Because
+hypothermia reduces rates of death and morbidity attributable to HIE and hypothermia needs to be initiated
+soon after birth to be effective,8–10 it is of clinical importance to ascertain prognosis soon after birth and, if possible, to identify a subset of neonates for whom hypothermia may be more beneficial.
+Our objectives were to identify predictor variables
+and to develop scoring systems and prognostic algorithms for HIE in term infants and to compare their
+predictive values with that of severe encephalopathy, as
+diagnosed through the early neurologic examinations
+used in the NICHD Neonatal Research Network hypothermia trial. A secondary goal was to determine the
+precooling attributes that alone or in combination could
+predict infants for whom hypothermia might be of
+greater benefit.
+METHODS
+Subjects
+This study was a secondary analysis of data from the
+NICHD Hypothermia Trial.3 Infants were screened if they
+were of gestational age of 36 weeks and were admitted
+to the NICU at 6 hours of age, with either poor respiratory effort at birth and a need for resuscitation or a
+diagnosis of encephalopathy. Infants were evaluated according to physiologic criteria and then through a neurologic examination. Eligibility criteria included pH of
+7.0 or base deficit of 16 mmol/L in cord blood or
+during the first 1 hour after birth. If, during this interval,
+the pH was between 7.01 and 7.15, the base deficit was
+between 10 and 15.9 mmol/L, or an arterial blood gas
+value was not available, then additional criteria were
+required (an acute perinatal event and either a 10-
+minute Apgar score of 5 or assisted ventilation for 10
+minutes from birth). Once these criteria were met, all
+infants underwent a standardized neurologic examination (Table 1), performed by a certified physician examiner. Encephalopathy was defined as 1 sign in at least
+3 of the 6 categories. The number of moderate or severe
+signs determined the degree of encephalopathy; if signs
+were distributed equally, then the designation was based
+on the level of consciousness.3 Moderate or severe encephalopathy or seizures qualified infants for the trial.3
+Follow-up Evaluation and Outcome Definitions
+During the 18- to 22-month follow-up visit, a comprehensive history, physical examination, and neurodevelopmental assessment11 were performed by trained and
+certified personnel who were masked to the infant’s
+group assignment. Gross motor function was graded according to the gross motor function classification system
+(GMFCS)12 (level 1: walks independently with some gait
+abnormalities; level 2: unable to walk but can sit, pull to
+standing, and cruise; level 3: unable to walk or crawl,
+uses hands for sitting support; level 4: needs support for
+sitting; level 5: requires adult assistance to move). Early
+cognitive functioning was assessed with the Bayley
+Scales of Infant Development II.13 Severe disability was
+defined as any of the following: a mental development
+index score of 70, a GMFCS grade of level 3 to 5,
+hearing impairment requiring hearing aids, or blindness.
+Moderate disability was defined as a mental development index score of 70 to 84, in addition to 1 of the
+following: a GMFCS grade of level 2, hearing impairment with no amplification, or a persistent seizure disorder.
+PEDIATRICS Volume 118, Number 5, November 2006 2085
+Downloaded from http://publications.aap.org/pediatrics/article-pdf/118/5/2084/1117546/zpe01106002084.pdf?casa_token=eiA0BNTkP7AAAAAA:qz_I0VqXpL8c7TaDuuOtq6FkIupy_Q461E7EQZZ9ionTVWzGdQbLKRpSMvC4Notheastern Unversity usr
+o
+Model Development
+Complementary approaches of logistic regression analysis and classification and regression tree (CART) analysis
+were used for development of the scoring systems and
+prognostic algorithms, respectively. Clinical and laboratory variables available at the time of initial evaluation
+(6 hours of age), including components of the early
+neurologic evaluation, were used for development of the
+models (Table 2). Separate logistic regression analysis
+with stepwise selection of variables (at P  .1) identified
+variables in the entire cohort associated with death/
+moderate/severe disability and death (SAS 9.0; SAS Institute, Cary, NC). The variables identified by stepwise
+regression were used to develop a logistic regression
+model for predicting the outcome of interest. The odds
+ratios from this logistic regression model were converted
+into point totals of 1 by dividing each odds ratio by the
+smallest odds ratio for any given level of a variable. Next,
+an overall score was assigned to each infant by summing
+the points they received for their various levels of each
+variable in the model. An infant with a missing value for
+any source variable was given a missing value for the
+overall score, because omission of an item would result
+in a lower score. Models with imputed values for the
+missing values were also tested but were not used because they did not demonstrate better accuracy. Continuous variables (eg, base deficit) were divided into 3
+categories by developing a receiver operating characteristic (ROC) curve for the variable with respect to the
+outcome of interest and identifying the cutoff points for
+80% sensitivity and 80% specificity. These scoring systems were applied to the entire cohort, the hypothermia
+cohort, and the control cohort separately. On the basis of
+the mutually exclusive ranges of scores, we identified (1)
+the score below which all infants had good outcomes
+(absence of either death/moderate/severe disability or
+death, depending on the model) even without hypothermia, (2) the score range in which infants might have
+benefited from hypothermia (all infants in the hypothermia group had good outcomes but some infants in the
+control group had poor outcomes), (3) the score range in
+which the benefit is less clear (poor outcomes were
+TABLE 1 Clinical Characteristics Evaluated in Early Neurologic Evaluations
+Category Signs of Encephalopathy
+Moderate Encephalopathy Severe Encephalopathy
+Level of consciousness Lethargic Stupor/coma
+Spontaneous activity Decreased activity No activity
+Posture Distal flexion, complete extension Decerebrate
+Tone Hypotonia (focal or general) Flaccid
+Primitive reflexes
+Suck Weak Absent
+Moro Incomplete Absent
+Autonomic system
+Pupils Constricted Deviated/dilated/nonreactive to light
+Heart rate Bradycardia Variable
+Respiration Periodic Apnea
+TABLE 2 Variables From the Prerandomization Period (Before 6 Hours of Age) Used for Development of
+the Logistic Regression and CART Models
+Time Period Variables
+Prenatal/intrapartum Maternal age, race, educational status, gravida, parity, gestational age, birth weight,
+mode of delivery, outborn/inborn, chronic hypertension/preeclampsia/
+eclampsia, placental problems (abruption/previa/accrete), antepartum
+hemorrhage, labor, uterine rupture, cord mishap, pyrexia of 37.6°C,
+antimicrobial therapy for suspected/confirmed infection, fetal decelerations,
+shoulder dystocia, gender of neonate
+Resuscitation Chest compressions, intubation, drugs, bag/mask ventilation at 10 min, chest
+compressions at 10 min, intubation at 10 min, drugs at 10 min, Apgar scores at
+1 min, 5 min, 10 min, and 20 min, time of spontaneous breathing (even on
+ventilator), cord blood gas pH, cord blood gas PCO2, cord blood gas PO2, cord
+blood gas HCO3 level, cord blood gas base deficit
+Postnatal Seizures, paralysis/sedation, level of consciousness, spontaneous activity, posture,
+tone, suck, Moro reflex, pupils, heart rate, respiration, first postnatal arterial blood
+gas pH, first postnatal arterial blood gas PCO2, first postnatal arterial blood gas
+PO2, first postnatal arterial blood gas HCO3 level, first postnatal arterial blood gas
+base deficit
+2086 AMBALAVANAN et al
+Downloaded from http://publications.aap.org/pediatrics/article-pdf/118/5/2084/1117546/zpe01106002084.pdf?casa_token=eiA0BNTkP7AAAAAA:qz_I0VqXpL8c7TaDuuOtq6FkIupy_Q461E7EQZZ9ionTVWzGdQbLKRpSMvy ortheastern niversity ser
+noted for some control infants and infants in the hypothermia group), and (4) the score above which all infants died or were disabled despite hypothermia.
+Prognostic algorithms were developed by using CART
+analysis. CART models were created with AnswerTree
+(SPSS, Chicago, IL), which performed recursive partitioning and automatic selection of optimal cutoff points
+for variables. The CART algorithm in this program is
+based on the method developed by Brieman et al.14 To
+select the tree, the Gini impurity function was used with
+a minimal change in impurity of 0.0001. The same variables used for stepwise variable selection for the logistic
+regression model (Table 2) were used for CART model
+development. The maximal tree depth was set empirically at 10 levels, with a minimal number of 20 observations in each parent (upper) node and 10 observations
+in each child (lower) node. Although the CART method
+for constructing the models may be complex and most
+clinicians are not familiar with the CART method, the
+resulting decision trees are simple to use and are similar
+to algorithms used in most clinical guidelines. Correct
+classification rates and other indicators of validity were
+calculated for the scoring systems (at the optimal point
+for both sensitivity and specificity, as identified with the
+ROC curve), the CART models, and the “severe encephalopathy” stage in early neurologic evaluation for the
+entire cohort, the hypothermia cohort, and the control
+cohort; 95% confidence intervals (CIs) were calculated
+for the correct classification rates by bootstrapping with
+a sample size of 150 (for the entire cohort) or 75 (for the
+hypothermia or control cohorts) and 1000 resamplings.
+RESULTS
+Study Group
+Of the 205 infants with primary outcome data, 172
+infants (excluding 33 infants with missing data for the
+selected predictor variables) could be analyzed for the
+outcome of death/disability and 171 (excluding 34 with
+missing data) could be analyzed for the outcome of
+death. Missing data were mainly variables from the first
+postnatal blood gas analyses, which were not recorded
+despite other variables from those blood gas analyses
+being recorded. Infants with missing data, after adjustment for center, were comparable to those with available data with respect to nonmissing variables. Of the
+172 infants analyzed for death or disability, 88 (51%)
+either died or were diagnosed as having disability; of the
+171 infants analyzed for the outcome of death, 54 (32%)
+died.
+Scoring Systems
+The predictor variables, odds ratios, and scores assigned
+to each variable for death/disability scoring are shown in
+Table 3, and those for death scoring are shown in Table
+4. For death/disability, the most influential variables, in
+order of highest odds ratios were decerebrate posture,
+base deficit of 22 mmol/L in first postnatal blood gas
+analysis, 5-minute Apgar score of 4, absence of spontaneous activity, and absence of chronic hypertension/
+pregnancy-induced hypertension. For death, the most
+influential variables were base deficit of 22 mmol/L in
+first postnatal blood gas analysis, decerebrate or distal
+flexion posture, absence of suck reflex, and absence of
+maternal antepartum hemorrhage.
+The models had high accuracy in both the hypothermia and control cohorts and in the entire cohort for
+death/disability (for entire cohort: area under the ROC
+curve: 0.85; 95% CI: 0.79 – 0.91) and death (area under
+the curve: 0.81; 95% CI: 0.73– 0.88). Overlap of the 95%
+CIs was noted for the correct classification rates for the
+scoring systems and early neurologic examination (Tables 5 and 6). The correct classification rates were comTABLE 3 Predictor Variables, Odds Ratios, and Scores Assigned to Each Variable for Death/Disability
+Scoring
+Variable Level of Variable Odds Ratio Score
+Posture Normal 0.037 1
+Distal flexion 0.401 11
+Decerebrate 1 27
+Spontaneous activity Normal/decreased 0.147 1
+None 1 7
+Base deficit of first postnatal blood gas analysis 15 mmol/L 0.073 1
+15–22 mmol/L 0.304 4
+22 mmol/L 1 14
+Apgar score at 5 min 7–10 0.082 1
+4–6 0.676 8
+0–3 1 12
+Chronic hypertension/preeclampsia/eclampsia Yes 0.2 1
+No 1 5
+The total score is obtained by adding the scores for each of the variables. Interpretation of the total score is as follows: 23: no death or
+moderate/severe disability even without hypothermia; 23–28: probable benefit from hypothermia; 29 –52: possible benefit; 52: death/disability likely despite hypothermia. n  172; 33 infants were deleted because of missing values; range of scores: 5– 65; c  0.873; R2  0.399;
+Hosmer-Lemeshow goodness-of-fit test,  2  9.48; df  7; P  .2203.
+PEDIATRICS Volume 118, Number 5, November 2006 2087
+Downloaded from http://publications.aap.org/pediatrics/article-pdf/118/5/2084/1117546/zpe01106002084.pdf?casa_token=eiA0BNTkP7AAAAAA:qz_I0VqXpL8c7TaDuuOtq6FkIupy_Q461E7EQZZ9ionTVWzGdQbLKRpSMvC4Ia8IPvk4ten Universityuser
+on 0 Aug
+parable in the hypothermia and control groups (Tables 5
+and 6). Higher scores were associated with worse outcomes. For the death/disability score, the score thresholds below which all infants survived without disability
+were 28 (95% CI: 24 –32) in the hypothermia group and
+23 (95% CI: 18 –29) in the control group. Cutoff points
+of 23 (95% CI: 19 –27), 29 (95% CI: 27–32), and 52
+(95% CI: 46 –58) divided the death/disability scores
+(range: 9 – 65 for entire cohort) into 4 categories (Table
+3), as follows: good prognosis, score of 23: all infants
+survived without moderate/severe disability even without hypothermia (12% of all enrolled infants were in
+this range); probable benefit, score of 23 to 28: all infants
+in the hypothermia group but not in the control group
+survived without disability (13% of enrolled infants);
+possible benefit, score of 29 to 52: some infants in both
+the hypothermia and control groups died or were disabled (72% of enrolled infants; 77% of control infants
+and 56% of hypothermia-treated infants died or were
+disabled; not significant); unlikely to reduce death/disability, score of 52: all infants died or were disabled
+despite hypothermia (3% of enrolled infants). A score of
+33 (95% CI: 30 –36) for infants receiving hypothermia,
+chosen to maximize the sensitivity and specificity, had
+TABLE 4 Predictor Variables, Odds Ratios, and Scores Assigned to Each Variable for Death Scoring
+Variable Level of Variable Odds Ratio Score
+Posture Normal 0.114 1
+Distal flexion 0.986 9
+Decerebrate 1 9
+Suck Normal/weak 0.216 1
+Absent 1 5
+Antepartum hemorrhage Yes 0.496 1
+No 1 2
+Base deficit of first postnatal blood gas 15 mmol/L 0.066 1
+15–22 mmol/L 0.239 4
+22 mmol/L 1 15
+The total score is obtained by adding the scores for each of the variables. Interpretation of the total score is as follows: 8: survival even without
+hypothermia; 8 –15: probable benefit from hypothermia; 16 –30: possible benefit; 30: death likely despite hypothermia. n  171; 34 infants
+were deleted because of missing values; range of scores: 4 –31; c  0.831; R2  0.296; Hosmer-Lemeshow goodness-of-fit test:  2  10.73; df
+ 8; P  .2176.
+TABLE 5 Diagnostic Validity Statistics for the Death/Disability Scoring System Based on Logistic
+Regression, CART Models, and Early Neurologic Examination
+Entire Cohort Hypothermia
+Cohort Only
+Control
+Cohort Only
+Scoring system (at optimal cutoff point of 33)
+Sensitivity 0.84 0.83 0.85
+Specificity 0.70 0.71 0.69
+Positive predictive power 0.75 0.67 0.81
+Negative predictive power 0.81 0.86 0.73
+Incremental positive predictive power 0.24 0.26 0.19
+Incremental negative predictive power 0.21 0.27 0.35
+Correctly classified (95% CI), % 78 (71–85) 76 (67–86) 79 (71–88)
+CART model
+Sensitivity 0.94 0.97 0.92
+Specificity 0.68 0.66 0.71
+Positive predictive power 0.77 0.69 0.84
+Negative predictive power 0.91 0.96 0.85
+Incremental positive predictive power 0.24 0.25 0.22
+Incremental negative predictive power 0.44 0.16 0.47
+Correctly classified (95% CI), % 80 (75–87)a 78 (70–89) 83 (76–92)
+Early neurologic examination (for diagnosis
+of severe encephalopathy)
+Sensitivity 0.52 0.51 0.53
+Specificity 0.84 0.84 0.85
+Positive predictive power 0.79 0.72 0.85
+Negative predictive power 0.61 0.68 0.52
+Incremental positive predictive power 0.26 0.27 0.23
+Incremental negative predictive power 0.14 0.13 0.14
+Correctly classified (95% CI), % 67 (59–74) 69 (59–81) 65 (54–76)
+a The CART model correctly classified significantly more infants with HIE, compared with the early neurologic examination (P  .05).
+2088 AMBALAVANAN et al
+Downloaded from http://publications.aap.org/pediatrics/article-pdf/118/5/2084/1117546/zpe01106002084.pdf?casa_token=eiA0BNTkP7AAAAAA:qz_I0VqXpL8c7TaDuuOtq6FkIupy_Q461E7EQZZ9ionTVWzGdQbLKRpSMvC4Ia8IPvk4ten Universityuser
+on 0 Aug
+83% sensitivity, 71% specificity, and a 76% correct classification rate for death/disability (Table 5).
+For the death score, the score thresholds below which
+all infants survived were 15 (95% CI: 11–19) in the
+hypothermia group and 8 (95% CI: 2–15) in the control
+group. Cutoff points of 8 (95% CI: 3–12), 15 (95% CI:
+13–18), and 31 (95% CI: 27–35) divided the death score
+(range: 4 – 45 for entire cohort) into 4 categories (Table
+4), as follows: good prognosis, score of 8: survival even
+without hypothermia (8% of all enrolled infants were in
+this range); probable benefit, score of 8 to 15 (22% of
+enrolled infants); possible benefit, score of 16 to 30
+(68% of enrolled infants; 46% of control infants and
+33% of hypothermia infants died; not significant); unlikely to reduce death, score of 31 (2% of enrolled
+infants). A score of 18 (95% CI: 15–21) for infants
+receiving hypothermia had 80% sensitivity, 75% specificity, and a 76% correct classification rate for death
+(Table 6).
+CART Models
+The CART model for death/disability is shown in Fig 1
+and that for death in Fig 2. The infant’s clinical data
+determine the path down the decision tree that is to be
+taken, and the incidence of the outcome in the terminal
+node or box is the probability of the outcome for the
+infant. The correct classification rates were improved
+significantly for death/disability but not for death, compared with early neurologic examination, as determined
+by the 95% CIs (Tables 5 and 6). The performances of
+the CART models and the logistic regression-based scoring systems were comparable. The correct classification
+rates were comparable in the hypothermia and control
+groups (Tables 5 and 6). Predictive variables in order of
+importance (higher on the decision tree) for death/disability included cord pH of 6.70 (91% death/morbidity) vs 6.70 (46%) (Fig 1). Among infants with cord pH
+of 6.70, those without spontaneous activity had worse
+outcomes (76% death/disability), compared with those
+with such activity (32% death/disability). Infants with
+some (normal/decreased) activity had worse outcomes if
+the base deficit in the first arterial blood gas analysis was
+18.5 mmol/L (55% vs 18% for 18.5 mmol/L) (Fig 1).
+Predictors for death were base deficit in the first postnatal arterial blood gas analysis of 24.5 mmol/L (72%
+death) vs 24.5 mmol/L (21%). For infants with base
+deficits of 24.5 mmol/L, a cord pH of 6.74 predicted
+worse outcomes (48% death vs 15% for pH of 6.74)
+(Fig 2).
+DISCUSSION
+The scoring systems and the CART models were able to
+classify correctly, with respect to death and death or
+disability, 75% of infants with HIE and were comparable to or better than early neurologic examinations
+alone. The decision trees and the scoring systems are
+helpful for assessment of prognosis soon after birth and
+may also be simpler for clinicians to use. Only a few
+TABLE 6 Diagnostic Validity Statistics for the Death Scoring System Based on Logistic Regression, CART
+Models, and Early Neurologic Examination
+Entire Cohort Hypothermia
+Cohort Only
+Control
+Cohort Only
+Scoring system (at optimal cutoff point of 18)
+Sensitivity 0.76 0.80 0.74
+Specificity 0.69 0.75 0.62
+Positive predictive power 0.53 0.48 0.57
+Negative predictive power 0.86 0.93 0.78
+Incremental positive predictive power 0.21 0.25 0.17
+Incremental negative predictive power 0.18 0.16 0.18
+Correctly classified (95% CI), % 71 (64–78) 76 (66–86) 66 (56–77)
+CART model
+Sensitivity 0.46 0.42 0.47
+Specificity 0.92 0.94 0.88
+Positive predictive power 0.72 0.69 0.74
+Negative predictive power 0.78 0.84 0.70
+Incremental positive predictive power 0.40 0.45 0.33
+Incremental negative predictive power 0.10 0.08 0.11
+Correctly classified (95% CI), % 77 (70–84) 82 (75–91) 72 (63–81)
+Early neurologic examination (for diagnosis
+of severe encephalopathy)
+Sensitivity 0.63 0.63 0.63
+Specificity 0.77 0.78 0.75
+Positive predictive power 0.54 0.47 0.60
+Negative predictive power 0.83 0.87 0.78
+Incremental positive predictive power 0.24 0.23 0.23
+Incremental negative predictive power 0.13 0.11 0.15
+Correctly classified (95% CI), % 73 (66–80) 74 (65–85) 71 (62–82)
+PEDIATRICS Volume 118, Number 5, November 2006 2089
+Downloaded from http://publications.aap.org/pediatrics/article-pdf/118/5/2084/1117546/zpe01106002084.pdf?casa_token=eiA0BNTkP7AAAAAA:qz_I0VqXpL8c7TaDuuOtq6FkIupy_Q461E7EQZZ9ionTVWzGdQbLKRpSMvC4Ia8IPvk4Cer University ser
+on 06Augu
+variables in the early neurologic examinations were actually associated with poor outcomes, and 2 blood gas
+variables (cord pH and first postnatal arterial blood gas
+base deficit) were identified as important predictors. Severe encephalopathy in early neurologic examinations
+had slightly more than 50% sensitivity and classified
+correctly only two thirds of infants for the outcome of
+death/disability.
+Strengths of this study include the relatively large
+sample, recruited from multiple sites, and prospective
+data collection by trained observers, both at birth and at
+follow-up evaluations. In addition, rather than empirical
+or expert opinion-derived scoring systems, we used variables associated statistically with the outcomes of interest and cutoff points for continuous variables that optimized discrimination between those with and without
+these outcomes.
+A limitation is that, despite the relatively large sample
+size for this population, it was not feasible to use a
+split-half cross-validation approach in which we could
+develop the model in half of the data set and test it in the
+other half. Therefore, these scoring systems and decision
+trees need to be validated with other data sets. Also, as
+with any clinical trial, only the variables that were considered to be important for the purposes of the trial were
+collected, and other potentially important variables were
+not collected in the first 6 hours (eg, biochemical variables such as serum or cerebrospinal fluid lactate levels,
+electroencephalographic or cerebral blood flow recordings, or other clinical, laboratory, imaging, or special
+investigation data). It must also be emphasized that none
+of the models had correct classification rates close to
+100%. Therefore, these models are suitable for risk stratification or assessment of prognosis but should not be a
+basis for decisions regarding withdrawal of support. Infants evaluated in this study experienced a severe insult,
+were admitted to tertiary care NICUs within 6 hours
+after birth, and fulfilled strict eligibility criteria for entry
+FIGURE 1
+CART model for death/disability. The dichotomous outcome of
+death or disability at the 18- to 22-month follow-up assessment is predicted by this decision tree. In each node (rectangle), the category (Cat.) 0 or 1 refers to the absence or presence
+of death/disability, respectively, and the percentages and n
+values refer to the infants in each of the categories. The increment in positive predictive value with the variable under
+consideration is shown as the improvement (eg, 0.09  9%
+increase in positive predictive value). ABG indicates arterial
+blood gas.
+2090 AMBALAVANAN et al
+Downloaded from http://publications.aap.org/pediatrics/article-pdf/118/5/2084/1117546/zpe01106002084.pdf?casa_token=eiA0BNTkP7AAAAAA:qz_I0VqXpL8c7TaDuuOtq6FkIupy_Q461E7EQZZ9ionTVWzGdQbLKRpSMvy ortheastern niversity ser
+into the hypothermia trial. It is likely that infants who do
+not have similar characteristics at admission have different outcomes, and the predictive value of the decision
+trees and scoring systems may be substantially different
+when applied to such infants. In any prognostic system,
+certain variables (eg, pH and PCO2) are relatively objective, whereas others, such as those noted in clinical
+examinations (eg, seizures), may be somewhat subjective, despite certification of examiners, leading to significant intercenter and inter-rater variations and variations in predictive ability across centers or clinicians. It is
+probable that the accuracy of prediction could be improved by adding variables that are determined later in
+the clinical course (eg, results of cranial imaging or clinical variables assessed closer to discharge). However, one
+of the aims of our study was to determine whether we
+could identify infants who would benefit from hypothermia, which needs to be initiated soon after birth to be
+effective10; therefore, we used only early variables. Our
+models are suitable for rapid assessment of sick neonates, because they rely mostly on objective measures
+such as pH and base deficit, together with a few welldefined clinical findings that are available earlier and
+may promote earlier identification and initiation of
+treatment. A detailed neurologic or radiologic evaluation
+is often difficult to perform for sick neonates, for whom
+issues of stabilization (eg, airway and intravenous access) take precedence.
+A comparison of the scoring systems based on logistic
+regression and the CART models reveals that they have
+similar accuracy. Regression analysis and classification
+tree models in other direct comparisons have also been
+noted to have comparable performance.15,16 However,
+each approach has its advantages and disadvantages.
+Logistic regression is often preferred when the objective
+is to obtain explicit measures for statistical inference and
+to identify the magnitude of the association between
+each variable and the outcome.16 However, estimation of
+the probability of the outcome for each patient with the
+logistic regression equation is cumbersome and not easily applicable in the NICU. Therefore, we simplified the
+process by developing a scoring system using odds ratios.
+The scoring systems provide a numeric value that indicates the magnitude of risk (with a higher score indicating a higher risk). The CART model has fewer variables
+and does not require any calculations; therefore, it may
+be simpler to use for clinicians and ancillary staff members. However, CART models provide a qualitative answer (likely or not likely to have a poor outcome) and
+not a quantitative result, and the magnitude of an individual’s risk is not as simple to determine as with the
+scoring system. Treatment with hypothermia did not
+lead to significant differences in the correct classification
+rates for the scoring systems or the CART models, possibly because of limitations in sample size.
+It is of interest to compare the variables selected for
+the scoring systems and the CART analysis. Major contributors to the CART model for death/disability included cord pH, spontaneous activity, and base deficit of
+the first postnatal blood gas analysis, and major contribFIGURE 2
+CART model for death. The outcome of death by the 18- to
+22-month follow-up assessment is predicted by this decision
+tree. In each node (rectangle), the category (Cat.) 0 or 1 refers to
+the absence or presence of death, respectively, and the percentages and n values refer to the infants in each of the categories.
+The increment in positive predictive value with the variable
+under consideration is shown as the improvement (eg, 0.078
+7.8% increase in positive predictive value). ABG indicates arterial
+blood gas.
+PEDIATRICS Volume 118, Number 5, November 2006 2091
+Downloaded from http://publications.aap.org/pediatrics/article-pdf/118/5/2084/1117546/zpe01106002084.pdf?casa_token=eiA0BNTkP7AAAAAA:qz_I0VqXpL8c7TaDuuOtq6FkIupy_Q461E7EQZZ9ionTVWzGdQbLKRpSMvy ortheastern niversity ser
+utors to the scoring systems included posture, spontaneous activity, base deficit of the first postnatal blood gas
+analysis, and 5-minute Apgar score. The CART models
+for death had only base deficit of the first postnatal blood
+gas analysis and cord pH, but major contributors to the
+regression model included not only the base deficit but
+also distal flexion/decerebrate posture and absent suck.
+One of the useful observations from this study is that
+not all of the components of the early neurologic examination (eg, level of consciousness, tone, Moro reflex,
+pupils, heart rate, and respiration) contributed to determination of the prognosis. Abnormal posture, absent
+spontaneous activity, and absent suck were the only
+components that contributed significantly to prognosis.
+Base deficit in the first postnatal arterial blood gas analysis was a variable that was important in both the scoring systems and CART models, and cord pH was also
+important in the CART model. These results are consistent with previous studies that indicated that the severity of neurologic deficits is related to the degree and
+duration of metabolic acidosis.17–19 In the CART model
+for death/disability, infants with a cord pH of 6.7,
+normal/decreased spontaneous activity, and a base deficit of 18.5 mmol/L had better outcomes if the PCO2 of
+the cord blood gas was 87 mm Hg, compared with 87
+mm Hg, which suggests that respiratory acidosis may be
+associated with better outcomes in the absence of severe
+metabolic acidosis. This finding is consistent with work
+by Vannucci et al20 that showed that mild hypercapnia
+was protective in immature rats with cerebral hypoxiaischemia.
+Variables considered as risk factors for HIE, such as
+antepartum hemorrhage and chronic hypertension/
+pregnancy-induced hypertension, were associated with
+reduced risks of death and/or morbidity in infants who
+actually developed HIE. We speculate that this paradoxical phenomenon may be attributable to increased clinical vigilance or fetal adaptation. Ischemic preconditioning occurs in neonatal animals,21 and intermittent
+episodes of cerebral ischemia in fetal sheep damage the
+striatum without injuring the cortex as much.22
+The scoring systems, both for death/disability and for
+death, identified score ranges of infants who are most
+likely to benefit from hypothermia. Because of the relatively small sample size and low power, the results of
+these secondary analyses should be considered hypothesis-generating, rather than a basis for clinical practice.
+In addition, the relationship of the scores to other clinical outcomes (eg, mild disability) and the effects of
+hypothermia on those other outcomes have not been
+determined. It is also possible that some survivors who
+did not have moderate/severe disability at follow-up
+assessments and who had low scores on our scoring
+systems might have disabilities that become apparent
+only at school age and potentially could have been attenuated by hypothermia. Very few infants had scores
+high enough that benefit from hypothermia was unlikely. Therefore, our scoring systems are not suitable as
+a tool for excluding infants from hypothermia.
+CONCLUSIONS
+Our scoring systems and CART models help in determination of the prognosis of infants with HIE and may be
+useful in discussions of outcomes with parents and in
+risk-stratification of infants in future clinical trials. It is
+important to recognize that these models may be less
+accurate for a future cohort or a different population,
+and it is necessary to avoid self-fulfilling prophecies,
+such as death attributable to withdrawal of support for
+infants for whom a poor outcome is predicted. It is
+known that obstetricians and pediatricians who underestimate the possibility of survival of a neonate are less
+likely to use life-sustaining therapies such as resuscitation, mechanical ventilation, inotropic support, or other
+standard therapies.23 With advances in perinatal care or
+when infants with different characteristics are considered, these algorithms or the interpretations of the
+scores will need modification to maintain their applicability.
+ACKNOWLEDGMENTS
+This work was supported by grants from the NICHD and
+the Department of Health and Human Services (grants
+U10 HD21385, U10 HD40689, U10 HD27871, U10
+HD21373, U01 HD36790, U10 HD40498, U10 HD40461,
+U10 HD34216, U10 HD21397, U10 HD27904, U10
+HD40492, U10 HD27856, U10 HD40521, U10 HD27853,
+U10 HD27880, and U10 HD27851) and from the National Institutes of Health (grants GCRC M01 RR 08084,
+M01 RR 00125, M01 RR 00750, M01 RR 00070, M01 RR
+0039 – 43, M01 RR 00039, and 5 M01 RR00044).
+Members of the NICHD Neonatal Research Network
+are as follows: Hypothermia Study Group: Case Western
+Reserve University, Rainbow Children’s Hospital: A.A.
+Fanaroff, M.C. Walsh, N. Newman, D. Wilson-Costello,
+B. Siner; Brown University, Women and Infants Hospital: W. Oh, A. Hensman, B. Vohr, L. Noel; Duke University: C.M. Cotten, K. Auten, R. Goldstein, M. Lohmeyer;
+Emory University, Grady Memorial Hospital, and Crawford Long Hospital: B.J. Stoll, L. Jain, E. Hale; Indiana
+University, Riley Hospital for Children, and Methodist
+Hospital: J.A. Lemons, D.D. Appel, L. Miller, A. Dusick,
+L. Richard; Stanford University: D.K. Stevenson, K. Van
+Meurs, M.B. Ball, S.R. Hintz; University of Alabama at
+Birmingham, University Hospital: W.A. Carlo, M. Collins, S. Cosby, M. Peralta-Carcelen, V. Phillips; University of Cincinnati, University Hospital, and Cincinnati
+Children’s Hospital Medical Center: E.F. Donovan, C.
+Grisby, B. Alexander, J. Shively, H. Mincey, J. Steichen,
+T. Gratton; University of California, San Diego, University of California, San Diego, Medical Center, and Sharp
+Mary Birch Hospital for Women: N.N. Finer, D. Kaegi, C.
+2092 AMBALAVANAN et al
+Downloaded from http://publications.aap.org/pediatrics/article-pdf/118/5/2084/1117546/zpe01106002084.pdf?casa_token=eiA0BNTkP7AAAAAA:qz_I0VqXpL8c7TaDuuOtq6FkIupy_Q461E7EQZZ9ionTVWzGdQbLKRpSMvC4Iorheastern Uniersity use
+on
+Henderson, W. Rich, K. Arnell, Y.E. Vaucher, M. Fuller;
+University of Miami: S. Duara, R. Everett, C.R. Bauer;
+University of Rochester, Golisano Children’s Hospital at
+Strong: R. Guillet, L. Reubens, G. Myers, D. Hust; University of Texas Southwestern Medical Center at Dallas,
+Parkland Hospital: A.R. Laptook, S. Madison, G. Hensley, N. Miller, R. Heyne, S. Broyles, J. Hickman; University of Texas-Houston, Memorial Hermann Children’s
+Hospital: J.E. Tyson, G. McDavid, E.G. Akpa, C.Y.
+Franco, P.A. Cluff, A.E. Lis, B.H. Morris, P.J. Bradt;
+Wayne State University, Hutzel Women’s Hospital, and
+Children’s Hospital of Michigan: S. Shankaran, R. Bara,
+G. Muran, Y. Johnson, D. Kennedy; Yale University,
+New Haven Children’s Hospital: R.A. Ehrenkranz, P.
+Gettner, E. Romano; NICHD Neonatal Research Steering
+Committee: Brown University: W. Oh; Case Western
+University: M.C. Walsh; Duke University: R.N. Goldberg;
+Emory University: B.J. Stoll; Indiana University: J.A.
+Lemons; Stanford University: D.K. Stevenson; University of Alabama at Birmingham: W.A. Carlo; University
+of Cincinnati: E.F. Donovan; University of California,
+San Diego: N.N. Finer; University of Miami: S. Duara;
+University of Rochester: D.L. Phelps; University of Texas-Dallas: A.R. Laptook; University of Texas-Houston:
+J.E. Tyson; Wake Forest University: T.M. O’Shea; Wayne
+State University: S. Shankaran; Yale University: R.A.
+Ehrenkranz; University of Cincinnati: A. Jobe, chair;
+Data Coordinating Center: RTI International: W.K.
+Poole, B. Hastings, C.M. Petrie; NICHD: R.D. Higgins,
+L.L. Wright, E. McClure; Data and Safety Monitoring
+Committee: Children’s National Medical Center: G.
+Avery; Columbia University: M. D’Alton; RTI International: W.K. Poole (ex officio); University of Virginia:
+J.C. Fletcher (deceased); University of Washington: C.A.
+Gleason; University of Pittsburgh: C. Redmond.
+REFERENCES
+1. Lawn J, Shibuya K, Stein C. No cry at birth: global estimates of
+intrapartum stillbirths and intrapartum-related neonatal
+deaths. Bull World Health Organ. 2005;83:409 – 417
+2. Bryce J, Boschi-Pinto C, Shibuya K, Black RE. WHO Child
+Health Epidemiology Reference Group: WHO estimates of the
+causes of death in children. Lancet. 2005;365:1147–1152
+3. Shankaran S, Laptook AR, Ehrenkranz RA, et al. Whole-body
+hypothermia for neonates with hypoxic-ischemic encephalopathy. N Engl J Med. 2005;353:1574 –1584
+4. Gluckman PD, Wyatt JS, Azzopardi D, et al. Selective head
+cooling with mild systemic hypothermia after neonatal
+encephalopathy: multicentre randomised trial. Lancet. 2005;
+365:663– 670
+5. Sarnat HB, Sarnat MS. Neonatal encephalopathy following
+fetal distress: a clinical and electroencephalographic study. Arch
+Neurol. 1976;33:696 –705
+6. Robertson CM, Finer NN, Grace MG. School performance of
+survivors of neonatal encephalopathy associated with birth
+asphyxia at term. J Pediatr. 1989;114:753–760
+7. Levene MI, Sands C, Grindulis H, Moore JR. Comparison of
+two methods of predicting outcome in perinatal asphyxia.
+Lancet. 1986;1:67– 69
+8. Gunn AJ, Gunn TR, Gunning MI, Williams CE, Gluckman PD.
+Neuroprotection with prolonged head cooling started before
+postischemic seizures in fetal sheep. Pediatrics. 1998;102:
+1098 –1106
+9. Gunn AJ, Gunn TR, de Haan HH, Williams CE, Gluckman PD.
+Dramatic neuronal rescue with prolonged selective head cooling after ischemia in fetal lambs. J Clin Invest. 1997;99:248 –256
+10. Gunn AJ, Battin M, Gluckman PD, Gunn TR, Bennet L. Therapeutic hypothermia: from lab to NICU. J Perinat Med. 2005;
+33:340 –346
+11. Vohr BR, Wright LL, Dusick AM, et al. Neurodevelopmental
+and functional outcomes of extremely low birth weight infants
+in the National Institute of Child Health and Human Development Neonatal Research Network, 1993–1994. Pediatrics. 2000;
+105:1216 –1226
+12. Palisano R, Rossenbaum P, Walter S, Russell D, Wood E, Galuppi B. Development and reliability of a system to classify
+gross motor function in children with cerebral palsy. Dev Med
+Child Neurol. 1997;39:214 –223
+13. Bayley N. Bayley Scales of Infant Development II. San Antonio, TX:
+Psychological Corp; 1993
+14. Brieman L, Friedman JH, Olshen RA, Stone CJ. Classification
+and Regression Trees. Belmont, CA: Wadsworth; 1984
+15. Germanson TP, Lanzino G, Kongable GL, Torner JC, Kassell
+NF. Risk classification after aneurysmal subarachnoid hemorrhage. Surg Neurol. 1998;49:155–163
+16. Werneck GL, de Carvalho DM, Barroso DE, Cook EF, Walker
+AM. Classification trees and logistic regression applied to prognostic studies: a comparison using meningococcal disease as an
+example. J Trop Pediatr. 1999;45:248 –251
+17. Low JA, Galbraith RS, Muir DW, Killen HL, Pater EA, Karchmar EJ. Factors associated with motor and cognitive deficits in
+children after intrapartum fetal hypoxia. Am J Obstet Gynecol.
+1984;148:533–539
+18. Talati AJ, Yang W, Yolton K, Korones SB, Bada HS. Combination of early perinatal factors to identify near-term and term
+neonates for neuroprotection. J Perinatol. 2005;25:245–250
+19. Toh VC. Early predictors of adverse outcome in term infants
+with post-asphyxial hypoxic ischaemic encephalopathy. Acta
+Paediatr. 2000;89:343–347
+20. Vannucci RC, Towfighi J, Heitjan DF, Brucklacher RM. Carbon
+dioxide protects the perinatal brain from hypoxic-ischemic
+damage: an experimental study in the immature rat. Pediatrics.
+1995;95:868 – 874
+21. Ota A, Ikeda T, Abe K, et al. Hypoxic-ischemic tolerance phenomenon observed in neonatal rat brain. Am J Obstet Gynecol.
+1998;179:1075–1078
+22. Mallard EC, Williams CE, Gunn AJ, Gunning MI, Gluckman
+PD. Frequent episodes of brief ischemia sensitize the fetal sheep
+brain to neuronal loss and induce striatal injury. Pediatr Res.
+1993;33:61– 65
+23. Morse SB, Haywood JL, Goldenberg RL, Bronstein J, Nelson
+KG, Carlo WA. Estimation of neonatal outcome and perinatal
+therapy use. Pediatrics. 2000;105:1046 –1050
+PEDIATRICS Volume 118, Number 5, November 2006 2093
+Downloaded from http://publications.aap.org/pediatrics/article-pdf/118/5/2084/1117546/zpe01106002084.pdf?casa_token=eiA0BNTkP7AAAAAA:qz_I0VqXpL8c7TaDuuOtq6FkIupy_Q461E7EQZZ9ionTVWzGdQbLKRpSMbyNortheasternUniversityuser
