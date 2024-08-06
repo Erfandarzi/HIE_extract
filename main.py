@@ -2,7 +2,7 @@ import os
 from dotenv import load_dotenv
 import pandas as pd
 from openai import OpenAI
-from feature import query_bayley_scores, query_primary_outcome, query_additional_scores
+from feature import query_bayley_scores, query_primary_outcome, query_additional_scores,query_sample_scores
 load_dotenv()  
 def update_or_append_dataframe(df, new_data, unique_col):
     """Updates or appends rows in the dataframe based on the unique column."""
@@ -38,6 +38,7 @@ def main():
     disease = "Hypoxemic-Ischemic Encephalopathy"
 
     bayley_scores = query_bayley_scores(client, text, disease)
+    sample_scores=query_sample_scores(client,text,disease)
     primary_outcome = query_primary_outcome(client, text, disease)
     additional_scores = query_additional_scores(client, text, disease)
 
@@ -45,6 +46,7 @@ def main():
     all_results = {
         **additional_scores.parsed.model_dump(),
         **bayley_scores.parsed.model_dump(),
+        **sample_scores.parsed.model_dump(),
         **primary_outcome.parsed.model_dump()
     }
 
