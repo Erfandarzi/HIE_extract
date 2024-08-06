@@ -44,10 +44,11 @@ def main():
 
     # Extract the parsed data from each result
     all_results = {
-        **additional_scores.parsed.model_dump(),
-        **bayley_scores.parsed.model_dump(),
         **sample_scores.parsed.model_dump(),
-        **primary_outcome.parsed.model_dump()
+        **primary_outcome.parsed.model_dump(),
+        **bayley_scores.parsed.model_dump(),
+        **additional_scores.parsed.model_dump()
+
     }
 
     # Replace None with 'N/A' for better readability in CSV
